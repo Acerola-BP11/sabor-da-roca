@@ -7,20 +7,20 @@
     <title>SpicyX | Home</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
     <!-- Font awesome -->
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+    <link href="/css/bootstrap.css" rel="stylesheet">   
     <!-- Slick slider -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">    
+    <link rel="stylesheet" type="text/css" href="/css/slick.css">    
     <!-- Date Picker -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-datepicker.css">    
     <!-- Fancybox slider -->
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <link rel="stylesheet" href="/css/jquery.fancybox.css" type="text/css" media="screen" /> 
     <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">     
+    <link id="switcher" href="/css/theme-color/default-theme.css" rel="stylesheet">     
 
     <!-- Main style sheet -->
     <link href="style.css" rel="stylesheet">    
@@ -44,7 +44,7 @@
   <!-- Pre Loader -->
   <div id="aa-preloader-area">
     <div class="mu-preloader">
-      <img src="assets/img/preloader.gif" alt=" loader img">
+      <img src="/img/preloader.gif" alt=" loader img">
     </div>
   </div>
   <!--START SCROLL TOP BUTTON -->
@@ -67,7 +67,7 @@
             <span class="icon-bar"></span>
           </button>
           <!-- LOGO -->                                                        
-          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Logo img"></a> 
+          <a class="navbar-brand" href="index.html"><img src="/img/logo.png" alt="Logo img"></a> 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
@@ -102,7 +102,7 @@
       <div class="mu-top-slider">
         <!-- Top slider single slide -->
         <div class="mu-top-slider-single">
-          <img src="assets/img/slider/1.jpg" alt="img">
+          <img src="/img/slider/1.jpg" alt="img">
           <!-- Top slider content -->
           <div class="mu-top-slider-content">
             <span class="mu-slider-small-title">Welcome</span>
@@ -115,7 +115,7 @@
         <!-- / Top slider single slide -->    
          <!-- Top slider single slide -->
         <div class="mu-top-slider-single">
-          <img src="assets/img/slider/2.jpg" alt="img">
+          <img src="/img/slider/2.jpg" alt="img">
           <!-- Top slider content -->
           <div class="mu-top-slider-content">
             <span class="mu-slider-small-title">The Real</span>
@@ -128,7 +128,7 @@
         <!-- / Top slider single slide --> 
          <!-- Top slider single slide -->
         <div class="mu-top-slider-single">
-          <img src="assets/img/slider/3.jpg" alt="img">
+          <img src="/img/slider/3.jpg" alt="img">
           <!-- Top slider content -->
           <div class="mu-top-slider-content">
             <span class="mu-slider-small-title">Delicious</span>
@@ -174,11 +174,11 @@
               <div class="col-md-6">
                 <div class="mu-about-us-right">                
                  <ul class="mu-abtus-slider">                 
-                   <li><img src="assets/img/about-us/abtus-img-1.png" alt="img"></li>
-                   <li><img src="assets/img/about-us/abtus-img-2.png" alt="img"></li>
-                   <li><img src="assets/img/about-us/abtus-img-6.png" alt="img"></li>
-                   <li><img src="assets/img/about-us/abtus-img-4.png" alt="img"></li>
-                   <li><img src="assets/img/about-us/abtus-img-5.png" alt="img"></li>
+                   <li><img src="/img/about-us/abtus-img-1.png" alt="img"></li>
+                   <li><img src="/img/about-us/abtus-img-2.png" alt="img"></li>
+                   <li><img src="/img/about-us/abtus-img-6.png" alt="img"></li>
+                   <li><img src="/img/about-us/abtus-img-4.png" alt="img"></li>
+                   <li><img src="/img/about-us/abtus-img-5.png" alt="img"></li>
                  </ul>
                 </div>
               </div>
@@ -268,7 +268,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-1.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-1.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -282,7 +282,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-2.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-2.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -296,7 +296,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-1.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-1.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -316,7 +316,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-1.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-1.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -330,7 +330,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-2.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-2.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -344,7 +344,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-1.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-1.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -370,7 +370,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-3.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-3.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -384,7 +384,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-4.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-4.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -398,7 +398,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-3.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-3.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -418,7 +418,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-4.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-4.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -432,7 +432,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-3.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-3.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -446,7 +446,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-4.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-4.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -472,7 +472,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-5.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-5.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -486,7 +486,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-6.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-6.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -500,7 +500,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-5.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-5.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -520,7 +520,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-5.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-5.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -534,7 +534,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-6.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-6.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -548,7 +548,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-5.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-5.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -574,7 +574,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-7.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-7.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -588,7 +588,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-8.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-8.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -602,7 +602,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-7.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-7.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -622,7 +622,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-8.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-8.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -636,7 +636,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-7.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-7.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -650,7 +650,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-8.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-8.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -676,7 +676,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-9.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-9.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -690,7 +690,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-10.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-10.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -704,7 +704,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-9.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-9.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -724,7 +724,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-9.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-9.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -738,7 +738,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-10.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-10.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -752,7 +752,7 @@
                               <div class="media">
                                 <div class="media-left">
                                   <a href="#">
-                                    <img class="media-object" src="assets/img/menu/item-9.jpg" alt="img">
+                                    <img class="media-object" src="/img/menu/item-9.jpg" alt="img">
                                   </a>
                                 </div>
                                 <div class="media-body">
@@ -881,11 +881,11 @@
                 <div class="mu-single-gallery col-md-4 mix food">
                   <div class="mu-single-gallery-item">
                     <figure class="mu-single-gallery-img">
-                      <a href="#"><img alt="img" src="assets/img/gallery/small/1.jpg"></a>
+                      <a href="#"><img alt="img" src="/img/gallery/small/1.jpg"></a>
                     </figure>
                     <div class="mu-single-gallery-info">
-                      <a href="assets/img/gallery/big/1.jpg" data-fancybox-group="gallery" class="fancybox">
-                        <img src="assets/img/plus.png" alt="plus icon img">
+                      <a href="/img/gallery/big/1.jpg" data-fancybox-group="gallery" class="fancybox">
+                        <img src="/img/plus.png" alt="plus icon img">
                       </a>
                     </div>                  
                   </div>
@@ -895,11 +895,11 @@
                 <div class="mu-single-gallery col-md-4 mix drink">
                   <div class="mu-single-gallery-item">
                     <figure class="mu-single-gallery-img">
-                      <a href="#"><img alt="img" src="assets/img/gallery/small/2.jpg"></a>
+                      <a href="#"><img alt="img" src="/img/gallery/small/2.jpg"></a>
                     </figure>
                     <div class="mu-single-gallery-info">
-                     <a href="assets/img/gallery/big/2.jpg" data-fancybox-group="gallery" class="fancybox">
-                        <img src="assets/img/plus.png" alt="plus icon img">
+                     <a href="/img/gallery/big/2.jpg" data-fancybox-group="gallery" class="fancybox">
+                        <img src="/img/plus.png" alt="plus icon img">
                       </a>
                     </div>                  
                   </div>
@@ -909,11 +909,11 @@
                 <div class="mu-single-gallery col-md-4 mix restaurant">                  
                   <div class="mu-single-gallery-item">
                    <figure class="mu-single-gallery-img">
-                      <a href="#"><img alt="img" src="assets/img/gallery/small/3.jpg"></a>
+                      <a href="#"><img alt="img" src="/img/gallery/small/3.jpg"></a>
                     </figure>
                     <div class="mu-single-gallery-info">
-                      <a href="assets/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox">
-                        <img src="assets/img/plus.png" alt="plus icon img">
+                      <a href="/img/gallery/big/3.jpg" data-fancybox-group="gallery" class="fancybox">
+                        <img src="/img/plus.png" alt="plus icon img">
                       </a>
                     </div>
                   </div>
@@ -923,11 +923,11 @@
                 <div class="mu-single-gallery col-md-4 mix dinner">                  
                   <div class="mu-single-gallery-item">
                     <figure class="mu-single-gallery-img">
-                      <a href="#"><img alt="img" src="assets/img/gallery/small/4.jpg"></a>
+                      <a href="#"><img alt="img" src="/img/gallery/small/4.jpg"></a>
                     </figure>
                     <div class="mu-single-gallery-info">
-                      <a href="assets/img/gallery/big/4.jpg" data-fancybox-group="gallery" class="fancybox">
-                        <img src="assets/img/plus.png" alt="plus icon img">
+                      <a href="/img/gallery/big/4.jpg" data-fancybox-group="gallery" class="fancybox">
+                        <img src="/img/plus.png" alt="plus icon img">
                       </a>
                     </div>                  
                   </div>
@@ -937,11 +937,11 @@
                 <div class="mu-single-gallery col-md-4 mix dinner">                  
                   <div class="mu-single-gallery-item">
                     <figure class="mu-single-gallery-img">
-                      <a href="#"><img alt="img" src="assets/img/gallery/small/5.jpg"></a>
+                      <a href="#"><img alt="img" src="/img/gallery/small/5.jpg"></a>
                     </figure>
                     <div class="mu-single-gallery-info">
-                     <a href="assets/img/gallery/big/5.jpg" data-fancybox-group="gallery" class="fancybox">
-                        <img src="assets/img/plus.png" alt="plus icon img">
+                     <a href="/img/gallery/big/5.jpg" data-fancybox-group="gallery" class="fancybox">
+                        <img src="/img/plus.png" alt="plus icon img">
                       </a>
                     </div>   
                   </div>
@@ -951,11 +951,11 @@
                 <div class="mu-single-gallery col-md-4 mix food">                  
                   <div class="mu-single-gallery-item">
                     <figure class="mu-single-gallery-img">
-                      <a href="#"><img alt="img" src="assets/img/gallery/small/6.jpg"></a>
+                      <a href="#"><img alt="img" src="/img/gallery/small/6.jpg"></a>
                     </figure>
                     <div class="mu-single-gallery-info">
-                      <a href="assets/img/gallery/big/6.jpg" data-fancybox-group="gallery" class="fancybox">
-                        <img src="assets/img/plus.png" alt="plus icon img">
+                      <a href="/img/gallery/big/6.jpg" data-fancybox-group="gallery" class="fancybox">
+                        <img src="/img/plus.png" alt="plus icon img">
                       </a>
                     </div>                  
                   </div>
@@ -965,11 +965,11 @@
                 <div class="mu-single-gallery col-md-4 mix drink">                  
                   <div class="mu-single-gallery-item">
                     <figure class="mu-single-gallery-img">
-                      <a href="#"><img alt="img" src="assets/img/gallery/small/7.jpg"></a>
+                      <a href="#"><img alt="img" src="/img/gallery/small/7.jpg"></a>
                     </figure>
                     <div class="mu-single-gallery-info">
-                     <a href="assets/img/gallery/big/7.jpg" data-fancybox-group="gallery" class="fancybox">
-                        <img src="assets/img/plus.png" alt="plus icon img">
+                     <a href="/img/gallery/big/7.jpg" data-fancybox-group="gallery" class="fancybox">
+                        <img src="/img/plus.png" alt="plus icon img">
                       </a>
                     </div>                  
                   </div>
@@ -979,11 +979,11 @@
                 <div class="mu-single-gallery col-md-4 mix restaurant">                  
                   <div class="mu-single-gallery-item">
                    <figure class="mu-single-gallery-img">
-                      <a href="#"><img alt="img" src="assets/img/gallery/small/8.jpg"></a>
+                      <a href="#"><img alt="img" src="/img/gallery/small/8.jpg"></a>
                     </figure>
                     <div class="mu-single-gallery-info">
-                      <a href="assets/img/gallery/big/8.jpg" data-fancybox-group="gallery" class="fancybox">
-                        <img src="assets/img/plus.png" alt="plus icon img">
+                      <a href="/img/gallery/big/8.jpg" data-fancybox-group="gallery" class="fancybox">
+                        <img src="/img/plus.png" alt="plus icon img">
                       </a>
                     </div>
                   </div>
@@ -993,11 +993,11 @@
                 <div class="mu-single-gallery col-md-4 mix dessert">                  
                   <div class="mu-single-gallery-item">
                     <figure class="mu-single-gallery-img">
-                      <a href="#"><img alt="img" src="assets/img/gallery/small/9.jpg"></a>
+                      <a href="#"><img alt="img" src="/img/gallery/small/9.jpg"></a>
                     </figure>
                     <div class="mu-single-gallery-info">
-                      <a href="assets/img/gallery/big/9.jpg" data-fancybox-group="gallery" class="fancybox">
-                        <img src="assets/img/plus.png" alt="plus icon img">
+                      <a href="/img/gallery/big/9.jpg" data-fancybox-group="gallery" class="fancybox">
+                        <img src="/img/plus.png" alt="plus icon img">
                       </a>
                     </div>                  
                   </div>
@@ -1103,7 +1103,7 @@
                 <li>
                   <div class="mu-single-chef">
                     <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-6.jpg" alt="chef img">
+                      <img src="/img/chef/chef-6.jpg" alt="chef img">
                     </figure>
                     <div class="mu-single-chef-info">
                       <h4>Simon Jonson</h4>
@@ -1120,7 +1120,7 @@
                 <li>
                   <div class="mu-single-chef">
                     <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-2.jpg" alt="chef img">
+                      <img src="/img/chef/chef-2.jpg" alt="chef img">
                     </figure>
                     <div class="mu-single-chef-info">
                       <h4>Kelly Wenzel</h4>
@@ -1137,7 +1137,7 @@
                 <li>
                   <div class="mu-single-chef">
                     <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-3.jpg" alt="chef img">
+                      <img src="/img/chef/chef-3.jpg" alt="chef img">
                     </figure>
                     <div class="mu-single-chef-info">
                       <h4>Greg Hong</h4>
@@ -1154,7 +1154,7 @@
                 <li>
                   <div class="mu-single-chef">
                     <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-5.jpg" alt="chef img">
+                      <img src="/img/chef/chef-5.jpg" alt="chef img">
                     </figure>
                     <div class="mu-single-chef-info">
                       <h4>Marty Fukuda</h4>
@@ -1171,7 +1171,7 @@
                 <li>
                   <div class="mu-single-chef">
                     <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-6.jpg" alt="chef img">
+                      <img src="/img/chef/chef-6.jpg" alt="chef img">
                     </figure>
                     <div class="mu-single-chef-info">
                       <h4>Simon Jonson</h4>
@@ -1188,7 +1188,7 @@
                 <li>
                   <div class="mu-single-chef">
                     <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-2.jpg" alt="chef img">
+                      <img src="/img/chef/chef-2.jpg" alt="chef img">
                     </figure>
                     <div class="mu-single-chef-info">
                       <h4>Kelly Wenzel</h4>
@@ -1205,7 +1205,7 @@
                 <li>
                   <div class="mu-single-chef">
                     <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-3.jpg" alt="chef img">
+                      <img src="/img/chef/chef-3.jpg" alt="chef img">
                     </figure>
                     <div class="mu-single-chef-info">
                       <h4>Greg Hong</h4>
@@ -1222,7 +1222,7 @@
                 <li>
                   <div class="mu-single-chef">
                     <figure class="mu-single-chef-img">
-                      <img src="assets/img/chef/chef-5.jpg" alt="chef img">
+                      <img src="/img/chef/chef-5.jpg" alt="chef img">
                     </figure>
                     <div class="mu-single-chef-info">
                       <h4>Marty Fukuda</h4>
@@ -1264,7 +1264,7 @@
                   <article class="mu-news-single">
                     <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, distinctio!</a></h3>
                     <figure class="mu-news-img">
-                      <a href="#"><img src="assets/img/news/1.jpg" alt="img"></a>                      
+                      <a href="#"><img src="/img/news/1.jpg" alt="img"></a>                      
                     </figure>
                     <div class="mu-news-single-content">                      
                       <ul class="mu-meta-nav">
@@ -1283,7 +1283,7 @@
                   <article class="mu-news-single">
                     <h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, distinctio!</a></h3>
                     <figure class="mu-news-img">
-                      <a href="#"><img src="assets/img/news/2.jpg" alt="img"></a>                      
+                      <a href="#"><img src="/img/news/2.jpg" alt="img"></a>                      
                     </figure>
                     <div class="mu-news-single-content">                      
                       <ul class="mu-meta-nav">
@@ -1406,23 +1406,23 @@
   <!-- End Footer -->
   
   <!-- jQuery library -->
-  <script src="assets/js/jquery.min.js"></script>  
+  <script src="/js/jquery.min.js"></script>  
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="assets/js/bootstrap.js"></script>   
+  <script src="/js/bootstrap.js"></script>   
   <!-- Slick slider -->
-  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <script type="text/javascript" src="/js/slick.js"></script>
   <!-- Counter -->
-  <script type="text/javascript" src="assets/js/waypoints.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+  <script type="text/javascript" src="/js/waypoints.js"></script>
+  <script type="text/javascript" src="/js/jquery.counterup.js"></script>
   <!-- Date Picker -->
-  <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script> 
+  <script type="text/javascript" src="/js/bootstrap-datepicker.js"></script> 
   <!-- Mixit slider -->
-  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <script type="text/javascript" src="/js/jquery.mixitup.js"></script>
   <!-- Add fancyBox -->        
-  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
 
   <!-- Custom js -->
-  <script src="assets/js/custom.js"></script> 
+  <script src="/js/custom.js"></script> 
 
   </body>
 </html>
