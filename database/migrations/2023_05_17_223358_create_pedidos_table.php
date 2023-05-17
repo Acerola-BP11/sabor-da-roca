@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('marmitex', function (Blueprint $table) {
+        Schema::create('pedidos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->float('preco');
-            $table->string('tamanho', 12);
-            $table->integer('tara', false);
-            $table->string('detalhamento');
+            $table->unsignedInteger('id_cliente');
+            $table->foreign('id_cliente')->references('cliente')->on('id');
+            $table->float('total_pedido');
+            $table->string('endereco');
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('marmitex');
+        Schema::dropIfExists('pedidos');
     }
 };

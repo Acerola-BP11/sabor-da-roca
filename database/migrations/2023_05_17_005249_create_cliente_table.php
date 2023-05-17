@@ -18,13 +18,13 @@ return new class extends Migration
             $table->string('rua');
             $table->string('complemento');
             $table->string('cidade');
-            $table->int('numero_fixo', 9);
-            $table->int('ddd_fixo', 2);
-            $table->int('numero_cel', 9);
-            $table->int('ddd_cel', 2);
-            $table->int('cpf', 11);
-            $table->string('nascimento', 10);
-            $table->string('rg', 10);
+            $table->integer('numero_fixo');
+            $table->integer('ddd_fixo');
+            $table->integer('numero_cel');
+            $table->integer('ddd_cel');
+            $table->integer('cpf');
+            $table->string('nascimento');
+            $table->integer('rg');
         });
     }
 
