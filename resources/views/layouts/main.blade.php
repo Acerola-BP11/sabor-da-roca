@@ -66,13 +66,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-            <li><a href="/home">Sobre Nós</a></li>                       
+            <li><a href="/home">Quem Somos</a></li>                       
             <li><a href="/menu">Menu</a></li>                       
             <li><a href="/pedido">Pedido</a></li>                       
             <li><a href="/galeria">GALLERY</a></li>
             <li><a href="/time">OUR TEAM</a></li>
-            <li><a href="/noticias">Noticias</a></li> 
-            <li><a href="/contato">CONTACT</a></li> 
+            <li><a href="/noticias">Nossos Clientes</a></li> 
+            <li><a href="/contato">Contato</a></li> 
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">PAGE <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">                
