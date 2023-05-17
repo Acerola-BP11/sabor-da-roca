@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Marmitex extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['preco', 'tamanho', 'tara', 'detalhamento'];
 }
