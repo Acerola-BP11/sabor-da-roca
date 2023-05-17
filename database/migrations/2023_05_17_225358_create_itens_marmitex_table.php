@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('marmitex', function (Blueprint $table) {
-            $table->id();
+        Schema::create('itens_marmitex', function (Blueprint $table) {
             $table->timestamps();
-            $table->float('preco');
-            $table->string('tamanho', 12);
-            $table->integer('tara', false);
-            $table->string('detalhamento');
+            $table->foreign('id_marmitex')->references('marmitex')->on('id');
+            $table->foreign('id_item')->references('itens')->on('id');
+            $table->primary(array('id_marmitex', 'id_item'));
         });
     }
 
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('marmitex');
+        Schema::dropIfExists('itens_marmitex');
     }
 };
