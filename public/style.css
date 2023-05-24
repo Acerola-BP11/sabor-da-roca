@@ -2425,3 +2425,5 @@ RESERVATION SECTION
     border-right: none;
   }
 }
+
+input[type="number"]::-webkit-inner-spin-button, #myNumberInput::-webkit-outer-spin-button { appearance: none; margin: 0; }
