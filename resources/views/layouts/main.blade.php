@@ -76,9 +76,17 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">PAGE <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">                
-                <li><a href="blog-archive.html">BLOG</a></li>
-                <li><a href="blog-single.html">BLOG DETAILS</a></li>
-                <li><a href="404.html">404 PAGE</a></li>                                            
+              @if (Route::has('login'))
+                    @auth
+                        <li><a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a></li>
+                    @else
+                        <li><a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a></li>
+
+                        @if (Route::has('register'))
+                            <li><a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a></li>
+                        @endif
+                    @endauth
+            @endif                                           
               </ul>
             </li>
           </ul>                            
