@@ -76,7 +76,7 @@
             <li><a href="/noticias">Nossos Clientes</a></li> 
             <li><a href="/contato">Contato</a></li> 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">PAGE <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">ADM <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">                
               @if (Route::has('login'))
                     @auth
