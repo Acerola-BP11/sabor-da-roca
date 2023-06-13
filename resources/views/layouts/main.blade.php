@@ -71,8 +71,8 @@
             <li><a href="/home">Quem Somos</a></li>                       
             <li><a href="/menu">Menu</a></li>                       
             <li><a href="/pedido">Pedido</a></li>                       
-            <li><a href="/galeria">GALLERY</a></li>
-            <li><a href="/time">OUR TEAM</a></li>
+            <li><a href="/galeria">Galeria</a></li>
+            <li><a href="/time">Nosso Time</a></li>
             <li><a href="/noticias">Nossos Clientes</a></li> 
             <li><a href="/contato">Contato</a></li> 
             <li class="dropdown">
