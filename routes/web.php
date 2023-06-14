@@ -2,6 +2,13 @@
 
 use App\Http\Controllers\clienteController;
 use App\Http\Controllers\ProfileController;
+
+use App\Http\Controllers\clienteController;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\itemController;
+use App\Http\Controllers\marmitexController;
+use App\Http\Controllers\pedidocController;
+
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -48,6 +55,38 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+// GET
+Route::get('/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/registermarmitex', function () {
+    return Inertia::render('Marmitex/RegisterMarmitex');
+})->middleware(['auth', 'verified'])->name('registermarmitex');
+
+// Route::get('/listmarmitex', function () {
+//     return Inertia::render('Marmitex/ListMarmitex');
+// })->middleware(['auth', 'verified'])->name('listmarmitex');
+
+Route::get('listmarmitex', [marmitexController::class, 'list'])
+->middleware(['auth', 'verified'])->name('listmarmitex');
+
+Route::get('/registerclient', function () {
+    return Inertia::render('Clients/RegisterClient');
+})->middleware(['auth', 'verified'])->name('registerclient');
+
+Route::get('/listclient', function () {
+    return Inertia::render('Clients/ListClient');
+})->middleware(['auth', 'verified'])->name('listclient');
+
+// POST
+Route::post('registermarmitex', [marmitexController::class, 'salvarnovo'])
+->middleware(['auth', 'verified']);
+
+Route::post('registerclient', [clienteController::class, 'salvarnovo'])
+->middleware(['auth', 'verified']);
 
 require __DIR__.'/auth.php';
 
