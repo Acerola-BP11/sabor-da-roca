@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use app\Models\Marmitex;
-use app\Models\Item_marmitex;
 class marmitexController extends Controller
 {
     public function list(){
