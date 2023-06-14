@@ -84,7 +84,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::post('edit', [marmitexController::class, 'edit']);
         
         // Excluir marmitex
-        Route::post('delete', [marmitexController::class, 'delete']);
+        Route::get('delete/{id}', [marmitexController::class, 'delete'])->name('deletemarmitex');
     });
 });
 

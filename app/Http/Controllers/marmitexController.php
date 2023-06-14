@@ -50,7 +50,7 @@ class MarmitexController extends Controller
         return redirect()->route('listmarmitex');
     }
 
-    public function excluir($id)
+    public function delete(Request $data, $id)
     {
         $marmitex = Marmitex::find($id);
         $marmitex->delete();

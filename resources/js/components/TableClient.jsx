@@ -1,4 +1,3 @@
-import UpdateIcon from '@/components/UpdateIcon'
 import DeleteIcon from '@/components/DeleteIcon'
 import axios from "axios"
 
@@ -27,7 +26,6 @@ export default function TableClient({...props }) {
       <td>{props.cpf}</td>
       <td>{props.rg}</td>
       <td>{props.nascimento}</td>
-      <td><button onClick={(e) => atualizar(e, props.id)}><UpdateIcon /></button></td>
       <td><button onClick={(e) => deletar(e, props.id)}><DeleteIcon /></button></td>      
     </tr>  
   );

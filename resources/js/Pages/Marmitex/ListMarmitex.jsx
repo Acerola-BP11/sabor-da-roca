@@ -24,7 +24,8 @@ export default function ListMarmitex({ auth, marmitex }) {
       <tbody>
         {marmitex.map((marmita, index) => (
           <TableMarmitex  
-            key={index}      
+            key={index}     
+            id={marmita.id} 
             preco={marmita.preco}
             tamanho={marmita.tamanho}
             tara={marmita.tara}
