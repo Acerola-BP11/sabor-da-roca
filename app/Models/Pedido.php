@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pedido extends Model
 {
-    protected $fillable = ['total_pedido', 'endereco', 'id_cliente'];
+    protected $fillable = ['endereco', 'id_cliente'];
+
+    protected $casts = ['total_pedido'];
 }
