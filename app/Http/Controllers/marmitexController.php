@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Marmitex;
+use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
 
 class marmitexController extends Controller
 {
     public function list(){
-        $marmitas = Marmitex::all();
-        return Inertia::render('Marmitex/ListMarmitex', [$marmitas]);
+        $marmitex = DB::table('marmitex')->get();
+        var_dump([$marmitex]);
+        // echo [$marmitex];
+        return Inertia::render('Marmitex/ListMarmitex', [$marmitex]);
     }
 
     public function new(){
@@ -35,7 +38,8 @@ class marmitexController extends Controller
         $marmitex->tara = $dados->input("tara");
         $marmitex->detalhamento = $dados->input("detalhamento");
         $marmitex->save();
-        return redirect('/listmarmitex');
+
+        return redirect('listmarmitex');
     }
     
     public function excluir($id){

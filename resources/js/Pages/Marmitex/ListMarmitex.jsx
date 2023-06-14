@@ -13,10 +13,10 @@ export default function ListMarmitex({ auth }) {
     
     <div className="flex flex-col items-center justify-center mt-10">
       <TableMarmitex        
-        preco="123"
-        tamanho="GRANDE"
-        tara="321"
-        detalhamento="TESTES"
+        preco={preco}
+        tamanho={tamanho}
+        tara={tara}
+        detalhamento={detalhamento}
       />
     </div>
     
