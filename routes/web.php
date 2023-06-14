@@ -2,13 +2,6 @@
 
 use App\Http\Controllers\clienteController;
 use App\Http\Controllers\ProfileController;
-
-use App\Http\Controllers\clienteController;
-use App\Http\Controllers\Controller;
-use App\Http\Controllers\itemController;
-use App\Http\Controllers\marmitexController;
-use App\Http\Controllers\pedidocController;
-
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
