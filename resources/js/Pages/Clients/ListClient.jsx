@@ -1,11 +1,8 @@
 import { Head } from '@inertiajs/react';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import TextInput from '@/components/TextInput';
-import InputLabel from "@/components/InputLabel";
-import PrimaryButton from '@/components/PrimaryButton';
 import TableClient from "@/components/TableClient";
 
-export default function ListClient({ auth }) {  
+export default function ListClient({ auth, clientes }) {    
   return (
     <AuthenticatedLayout
         user={auth.user}
@@ -14,20 +11,48 @@ export default function ListClient({ auth }) {
     
     <Head title="Listar Clientes" />
     
-    <div className="flex flex-col items-center justify-center mt-10">
-      <TableClient        
-        nome="teste"
-        rua="rua"
-        complemento="perto"
-        cidade="bauru"
-        ddd_fixo="14"
-        numero_fixo="1234123"
-        ddd_cel="13"
-        numero_cel="21321312"
-        cpf="123123123"
-        rg="123213"
-        nascimento="12/12/12"
-      />
+    <div className="flex flex-col items-center justify-center mt-10">  
+      <table className={'w-full max-w-5xl text-left'}>
+        <thead>
+          <tr className="bg-slate-300">
+            <th>Nome</th>
+            <th>Rua</th>
+            <th>Complemento</th>
+            <th>Cidade</th>
+            <th>DDD Fixo</th>
+            <th>Numero Fixo</th>
+            <th>DDD Cel</th>
+            <th>Numero Cel</th>
+            <th>CPF</th>
+            <th>RG</th>
+            <th>Data de Nascimento</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {clientes.map((cliente, index) => (
+            <TableClient
+              key={index}
+              id={cliente.id}
+              nome={cliente.nome}
+              rua={cliente.rua}
+              complemento={cliente.complemento}
+              cidade={cliente.cidade}
+              ddd_fixo={cliente.ddd_fixo}
+              numero_fixo={cliente.numero_fixo}
+              ddd_cel={cliente.ddd_cel}
+              numero_cel={cliente.numero_cel}
+              cpf={cliente.cpf}
+              rg={cliente.rg}
+              nascimento={cliente.nascimento}              
+            />
+          ))}
+        </tbody>
+
+      </table>      
+            
     </div>
     
     </AuthenticatedLayout>

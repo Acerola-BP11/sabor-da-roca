@@ -11,8 +11,9 @@ class clienteController extends Controller
 {
     public function list(){
         $clientes = DB::table('cliente')->get();
-        return Inertia::render('Clients/ListClient', [$clientes]);
+        return Inertia::render('Clients/ListClient', ['clientes' => $clientes]);
     }
+
     public function new(){
         return Inertia::render('Clients/RegisterClient');
     }
@@ -31,7 +32,7 @@ class clienteController extends Controller
         $cliente->nascimento = $dados->input("nascimento");
         $cliente->rg = $dados->input("rg");
         $cliente->save();
-        return redirect('/listclients');
+        return redirect('/listclient');
     }
 
     public function edit($dados){
@@ -49,11 +50,13 @@ class clienteController extends Controller
         $cliente->nascimento = $dados->input("nascimento");
         $cliente->rg = $dados->input("rg");
         $cliente->save();
-        return redirect('/listClients');
+        return redirect('/listclient');
     }
 
-    public function excluir($id){
+    public function delete($id){
         $cliente = Cliente::find($id);
         $cliente->destroy();
+
+        return redirect('/listclient');
     }
 }
