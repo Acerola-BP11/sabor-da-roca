@@ -11,8 +11,7 @@ class clienteController extends Controller
 {
     public function list(){
         $clientes = DB::table('cliente')->get();
-        // return Inertia::render('Clients/ListClient', [$clientes]);
-        return Inertia::render('Clients/ListClient');
+        return Inertia::render('Clients/ListClient', [$clientes]);
     }
     public function new(){
         return Inertia::render('Clients/RegisterClient');
