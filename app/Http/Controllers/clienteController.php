@@ -59,7 +59,7 @@ class ClienteController extends Controller
         return redirect()->route('listclient');
     }
 
-    public function excluir(Request $id)
+    public function delete(Request $id)
     {
         $cliente = Cliente::find($id);
         $cliente->delete();
