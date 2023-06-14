@@ -96,5 +96,6 @@ Route::get('time', function(){
     return view('time');
 })->name('time');
 
+Route::get('listguest', [marmitexController::class, 'listGuest'])->name('listguest');
 
 require __DIR__.'/auth.php';

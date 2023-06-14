@@ -13,6 +13,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             Nossos Clientes⠀⠀
                         </Link>
                         <Link
+                            href={route('listguest')}   
+                            className="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
+                        >
+                            Cardapio⠀⠀
+                        </Link>
+                        <Link
                             href={route('time')}   
                             className="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                         >
@@ -44,7 +50,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     )}
                 </div>
 
-                <img src="/img/sabor-da-roca.png" alt="" className="w-1/2 h-1/2"/>                
+                <img src="/img/sabor-da-roca.png" alt="" className="w-2/5 h-2/5px"/>                
             </div>
 
             <style>{`

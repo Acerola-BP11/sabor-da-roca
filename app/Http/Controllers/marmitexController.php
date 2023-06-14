@@ -15,6 +15,12 @@ class MarmitexController extends Controller
         return Inertia::render('Marmitex/ListMarmitex', ['marmitex' => $marmitex]);
     }
 
+    public function listGuest()
+    {
+        $marmitex = DB::table('marmitex')->get();
+        return Inertia::render('Marmitex/ListGuest', ['marmitex' => $marmitex]);
+    }
+
     public function new()
     {
         return Inertia::render('Marmitex/RegisterMarmitex');
