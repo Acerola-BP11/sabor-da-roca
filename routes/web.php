@@ -61,8 +61,8 @@ Route::get('/time', function(){
     return view('time');
 });
 
-Route::get('/noticias', function(){
-    return view('noticias');
+Route::get('/clientes', function(){
+    return view('clientes');
 });
 
 Route::get('/contato', function(){

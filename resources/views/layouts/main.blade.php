@@ -73,7 +73,7 @@
             <li><a href="/pedido">Pedido</a></li>                       
             <li><a href="/galeria">Galeria</a></li>
             <li><a href="/time">Nosso Time</a></li>
-            <li><a href="/noticias">Nossos Clientes</a></li> 
+            <li><a href="/clientes">Nossos Clientes</a></li> 
             <li><a href="/contato">Contato</a></li> 
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">ADM <span class="caret"></span></a>
