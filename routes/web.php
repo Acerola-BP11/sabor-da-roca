@@ -77,8 +77,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('list', [MarmitexController::class, 'list'])->name('listmarmitex');
         
         // Registrar novo marmitex
-        Route::get('register', [MarmitexController::class, 'new'])->name('registermarmitex');
-        Route::post('register', [MarmitexController::class, 'salvarnovo']);
+        Route::get('register', [marmitexController::class, 'new'])->name('registermarmitex');
+        Route::post('register', [marmitexController::class, 'salvarnovo']);
         
         // Editar marmitex
         Route::post('edit', [MarmitexController::class, 'edit']);

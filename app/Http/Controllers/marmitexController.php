@@ -7,43 +7,47 @@ use App\Models\Marmitex;
 use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
 
-class marmitexController extends Controller
+class MarmitexController extends Controller
 {
-    public function list(){
+    public function list()
+    {
         $marmitex = DB::table('marmitex')->get();
-        var_dump([$marmitex]);
-        // echo [$marmitex];
         return Inertia::render('Marmitex/ListMarmitex', [$marmitex]);
     }
 
-    public function new(){
+    public function new()
+    {
         return Inertia::render('Marmitex/RegisterMarmitex');
     }
 
-    public function edit(Request $dados){
-        $id = $dados->input('id');
+    public function edit(Request $request)
+    {
+        $id = $request->input('id');
         $marmitex = Marmitex::find($id);
-        $marmitex->preco = $dados->input("preco");
-        $marmitex->tamanho = $dados->input("tamanho");
-        $marmitex->tara = $dados->input("tara");
-        $marmitex->detalhamento = $dados->input("detalhamento");
+        $marmitex->preco = $request->input("preco");
+        $marmitex->tamanho = $request->input("tamanho");
+        $marmitex->tara = $request->input("tara");
+        $marmitex->detalhamento = $request->input("detalhamento");
         $marmitex->save();
-        return redirect('/listmarmitex');
+        return redirect()->route('listmarmitex');
     }
 
-    public function salvarnovo(Request $dados) {
+    public function salvarnovo(Request $request)
+    {
         $marmitex = new Marmitex;
-        $marmitex->preco = $dados->input("preco");
-        $marmitex->tamanho = $dados->input("tamanho");
-        $marmitex->tara = $dados->input("tara");
-        $marmitex->detalhamento = $dados->input("detalhamento");
+        $marmitex->preco = $request->input("preco");
+        $marmitex->tamanho = $request->input("tamanho");
+        $marmitex->tara = $request->input("tara");
+        $marmitex->detalhamento = $request->input("detalhamento");
         $marmitex->save();
 
-        return redirect('listmarmitex');
+        return redirect()->route('listmarmitex');
     }
-    
-    public function excluir($id){
+
+    public function excluir($id)
+    {
         $marmitex = Marmitex::find($id);
         $marmitex->delete();
+        return redirect()->route('listmarmitex');
     }
 }
