@@ -74,17 +74,17 @@ Route::middleware('auth')->group(function () {
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::prefix('marmitex')->group(function () {
         // Listar marmitex
-        Route::get('list', [MarmitexController::class, 'list'])->name('listmarmitex');
+        Route::get('list', [marmitexController::class, 'list'])->name('listmarmitex');
         
         // Registrar novo marmitex
         Route::get('register', [marmitexController::class, 'new'])->name('registermarmitex');
-        Route::post('register', [marmitexController::class, 'salvarnovo']);
+        Route::post('register', [marmitexController::class, 'salvarnovo'])->name('registermarmitex');
         
         // Editar marmitex
-        Route::post('edit', [MarmitexController::class, 'edit']);
+        Route::post('edit', [marmitexController::class, 'edit']);
         
         // Excluir marmitex
-        Route::post('delete', [MarmitexController::class, 'delete']);
+        Route::post('delete', [marmitexController::class, 'delete']);
     });
 });
 
