@@ -12,7 +12,7 @@ class marmitexController extends Controller
         $marmitas = Marmitex::all();
         return redirect('listmarmitex', [$marmitas]);
     }
-    
+
     public function new(){
         return redirect('/listmarmitex');
     }
