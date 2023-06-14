@@ -31,7 +31,7 @@ class clienteController extends Controller
         $cliente->nascimento = $dados->input("nascimento");
         $cliente->rg = $dados->input("rg");
         $cliente->save();
-        return redirect('/listclients');
+        return redirect('/listclient');
     }
 
     public function edit($dados){
@@ -49,7 +49,7 @@ class clienteController extends Controller
         $cliente->nascimento = $dados->input("nascimento");
         $cliente->rg = $dados->input("rg");
         $cliente->save();
-        return redirect('/listClients');
+        return redirect('/listClient');
     }
 
     public function excluir($id){

@@ -14,6 +14,17 @@ class marmitexController extends Controller
     }
 
     public function new(){
+        return Inertia::render('Marmitex/RegisterMarmitex');
+    }
+
+    public function edit(Request $dados){
+        $id = $dados->input('id');
+        $marmitex = Marmitex::find($id);
+        $marmitex->preco = $dados->input("preco");
+        $marmitex->tamanho = $dados->input("tamanho");
+        $marmitex->tara = $dados->input("tara");
+        $marmitex->detalhamento = $dados->input("detalhamento");
+        $marmitex->save();
         return redirect('/listmarmitex');
     }
 
