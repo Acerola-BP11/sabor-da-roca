@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Marmitex;
+use Inertia\Inertia;
 
 class marmitexController extends Controller
 {
     public function list(){
         $marmitas = Marmitex::all();
-        return redirect('listmarmitex', 301, [$marmitas]);
+        return Inertia::render('Marmitex/ListMarmitex', [$marmitas]);
     }
 
     public function new(){

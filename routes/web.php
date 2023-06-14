@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\clienteController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\marmitexController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -32,10 +33,11 @@ Route::get('/dashboard', function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::controller(clienteController::class)->group(function () {
-        Route::get('/clientes', 'list');
-        Route::post('/clientes', 'salvar_novo');
+        Route::get('listclient', 'list')->name('listclient');
+        Route::get('registerclient', 'new')->name('registerclient');
+        Route::post('registerclient', 'salvar_novo')->name('registerclient');
         Route::post('/clientes/edit', 'edit');
-        Route::post('/clientes/delete', 'delete');
+        Route::post('clientes/delete', 'delete');
     });
 });
 
@@ -66,14 +68,6 @@ Route::get('/registermarmitex', function () {
 Route::get('listmarmitex', [marmitexController::class, 'list'])
 ->middleware(['auth', 'verified'])->name('listmarmitex');
 
-Route::get('/registerclient', function () {
-    return Inertia::render('Clients/RegisterClient');
-})->middleware(['auth', 'verified'])->name('registerclient');
-
-Route::get('/listclient', function () {
-    return Inertia::render('Clients/ListClient');
-})->middleware(['auth', 'verified'])->name('listclient');
-
 // POST
 Route::post('registermarmitex', [marmitexController::class, 'salvarnovo'])
 ->middleware(['auth', 'verified']);
@@ -82,32 +76,3 @@ Route::post('registerclient', [clienteController::class, 'salvarnovo'])
 ->middleware(['auth', 'verified']);
 
 require __DIR__.'/auth.php';
-
-Route::get('/home', function(){
-    return view('index');
-});
-
-Route::get('/menu', function(){
-    return view('menu');
-});
-
-Route::get('/pedido', function(){
-    return view('pedido');
-});
-
-Route::get('/galeria', function(){
-    return view('galeria');
-});
-
-Route::get('/time', function(){
-    return view('time');
-});
-
-Route::get('/clientes', function(){
-    return view('clientes');
-});
-
-Route::get('/contato', function(){
-    return view('contato');
-});
-
