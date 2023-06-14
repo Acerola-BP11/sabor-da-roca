@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\clienteController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -28,6 +29,15 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::controller(clienteController::class)->group(function () {
+        Route::get('/clientes', 'list');
+        Route::post('/clientes', 'salvar_novo');
+        Route::post('/clientes/edit', 'edit');
+        Route::post('/clientes/delete', 'delete');
+    });
+});
 
 Route::get('/cadastrar', function () {
     return Inertia::render('cadastrar');
