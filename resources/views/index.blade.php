@@ -54,30 +54,30 @@
             <ul class="mu-counter-nav">
               <li class="col-md-3 col-sm-3 col-xs-12">
                 <div class="mu-single-counter">
-                  <span>Fresh</span>
+                  <span>Fresco</span>
                   <h3><span class="counter">55</span><sup>+</sup></h3>
-                  <p>Breakfast Items</p>
+                  <p>Tipos de Marmitex</p>
                 </div>
               </li>
               <li class="col-md-3 col-sm-3 col-xs-12">
                 <div class="mu-single-counter">
-                  <span>Delicious</span>
+                  <span>Delicioso</span>
                   <h3><span class="counter">130</span><sup>+</sup></h3>
-                  <p>Lunch Items</p>
+                  <p>Acompanhementos</p>
                 </div>
               </li>
                <li class="col-md-3 col-sm-3 col-xs-12">
                 <div class="mu-single-counter">
-                  <span>Hot</span>
+                  <span>Quente</span>
                    <h3><span class="counter">35</span><sup>+</sup></h3>
-                  <p>Coffee Items</p>
+                  <p>Bebidas</p>
                 </div>
               </li>
                <li class="col-md-3 col-sm-3 col-xs-12">
                 <div class="mu-single-counter">
-                  <span>Satisfied</span>
+                  <span>Satisfeitos</span>
                   <h3><span class="counter">3562</span><sup>+</sup></h3>
-                  <p>Customers</p>
+                  <p>Clientes</p>
                 </div>
               </li>
             </ul>
