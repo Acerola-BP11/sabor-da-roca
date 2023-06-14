@@ -28,7 +28,7 @@ export default function RegisterMarmitex({ auth }) {
     <Head title="Cadastrar Marmitex" />
     
     <div className="flex flex-col items-center justify-center">
-      <form onSubmit={submit} className="flex flex-col w-96 items-left justify-center mt-20 bg-white p-5">      
+      <form onSubmit={submit} className="flex flex-col w-96 items-left justify-center mt-20 bg-white p-5">   
         <InputLabel htmlFor="preco" value="Preco" />
         <TextInput
           id="preco"

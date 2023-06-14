@@ -7,18 +7,21 @@ use App\Models\Cliente;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\DB;
 
-class clienteController extends Controller
+class ClienteController extends Controller
 {
-    public function list(){
+    public function list()
+    {
         $clientes = DB::table('cliente')->get();
         return Inertia::render('Clients/ListClient', ['clientes' => $clientes]);
     }
 
-    public function new(){
+    public function new()
+    {
         return Inertia::render('Clients/RegisterClient');
     }
 
-    public function salvarnovo(Request $dados) {
+    public function salvarnovo(Request $dados)
+    {
         $cliente = new Cliente;
         $cliente->nome = $dados->input("nome");
         $cliente->rua = $dados->input("rua");
@@ -32,10 +35,12 @@ class clienteController extends Controller
         $cliente->nascimento = $dados->input("nascimento");
         $cliente->rg = $dados->input("rg");
         $cliente->save();
-        return redirect('/listclient');
+
+        return redirect()->route('listclient');
     }
 
-    public function edit($dados){
+    public function edit(Request $dados)
+    {
         $id = $dados->input('id');
         $cliente = Cliente::find($id);
         $cliente->nome = $dados->input("nome");
@@ -50,13 +55,15 @@ class clienteController extends Controller
         $cliente->nascimento = $dados->input("nascimento");
         $cliente->rg = $dados->input("rg");
         $cliente->save();
-        return redirect('/listclient');
+
+        return redirect()->route('listclient');
     }
 
-    public function delete($id){
+    public function excluir($id)
+    {
         $cliente = Cliente::find($id);
-        $cliente->destroy();
+        $cliente->delete();
 
-        return redirect('/listclient');
+        return redirect()->route('listclient');
     }
 }
