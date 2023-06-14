@@ -5,14 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use app\Models\Marmitex;
 use app\Models\Item_marmitex;
+
 class marmitexController extends Controller
 {
     public function list(){
         $marmitas = Marmitex::all();
-        return view('lista_marmitex', [$marmitas]);
+        return redirect('listmarmitex', [$marmitas]);
     }
+    
     public function new(){
-        return view('new_marmitex');
+        return redirect('/listmarmitex');
     }
 
     public function salvarnovo(Request $dados) {
@@ -22,7 +24,7 @@ class marmitexController extends Controller
         $marmitex->preco = $dados->input("tara");
         $marmitex->detalhamento = $dados->input("detalhamento");
         $marmitex->save();
-        return redirect('/marmitex');
+        return redirect('/listmarmitex');
     }
     
     public function excluir($id){
