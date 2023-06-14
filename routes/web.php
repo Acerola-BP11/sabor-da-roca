@@ -1,13 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-
 use App\Http\Controllers\clienteController;
-use App\Http\Controllers\Controller;
-use App\Http\Controllers\itemController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\marmitexController;
-use App\Http\Controllers\pedidocController;
-
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -32,6 +27,24 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::controller(clienteController::class)->group(function () {
+        Route::get('listclient', 'list')->name('listclient');
+        Route::get('registerclient', 'new')->name('registerclient');
+        Route::post('registerclient', 'salvar_novo')->name('registerclient');
+        Route::post('/clientes/edit', 'edit');
+        Route::post('clientes/delete', 'delete');
+    });
+});
+
+Route::get('/cadastrar', function () {
+    return Inertia::render('cadastrar');
+})->middleware(['auth', 'verified'])->name('cadastrar');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -55,14 +68,6 @@ Route::get('/registermarmitex', function () {
 Route::get('listmarmitex', [marmitexController::class, 'list'])
 ->middleware(['auth', 'verified'])->name('listmarmitex');
 
-Route::get('/registerclient', function () {
-    return Inertia::render('Clients/RegisterClient');
-})->middleware(['auth', 'verified'])->name('registerclient');
-
-Route::get('/listclient', function () {
-    return Inertia::render('Clients/ListClient');
-})->middleware(['auth', 'verified'])->name('listclient');
-
 // POST
 Route::post('registermarmitex', [marmitexController::class, 'salvarnovo'])
 ->middleware(['auth', 'verified']);
@@ -71,32 +76,3 @@ Route::post('registerclient', [clienteController::class, 'salvarnovo'])
 ->middleware(['auth', 'verified']);
 
 require __DIR__.'/auth.php';
-
-Route::get('/home', function(){
-    return view('index');
-});
-
-Route::get('/menu', function(){
-    return view('menu');
-});
-
-Route::get('/pedido', function(){
-    return view('pedido');
-});
-
-Route::get('/galeria', function(){
-    return view('galeria');
-});
-
-Route::get('/time', function(){
-    return view('time');
-});
-
-Route::get('/clientes', function(){
-    return view('clientes');
-});
-
-Route::get('/contato', function(){
-    return view('contato');
-});
-

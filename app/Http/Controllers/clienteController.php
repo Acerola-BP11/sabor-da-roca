@@ -4,19 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Cliente;
+use Inertia\Inertia;
+use Illuminate\Support\Facades\DB;
 
 class clienteController extends Controller
 {
     public function list(){
-        $clientes = Cliente::all();
-        if ($clientes.count <= 0){
-            return view('lista_clientes', ['Não há nenhum item cadastrado!']);
-        }else{
-            return view('lista_clientes', [$clientes]);
-        }
+        $clientes = DB::table('cliente')->get();
+        // return Inertia::render('Clients/ListClient', [$clientes]);
+        return Inertia::render('Clients/ListClient');
     }
     public function new(){
-        return view('new_cliente');
+        return Inertia::render('Clients/RegisterClient');
     }
 
     public function salvarnovo(Request $dados) {
@@ -33,10 +32,11 @@ class clienteController extends Controller
         $cliente->nascimento = $dados->input("nascimento");
         $cliente->rg = $dados->input("rg");
         $cliente->save();
-        return redirect('/listClients');
+        return redirect('/listclients');
     }
 
-    public function edit($id){
+    public function edit($dados){
+        $id = $dados->input('id');
         $cliente = Cliente::find($id);
         $cliente->nome = $dados->input("nome");
         $cliente->rua = $dados->input("rua");
