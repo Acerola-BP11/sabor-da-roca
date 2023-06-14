@@ -92,5 +92,9 @@ Route::get('nossosclientes', function(){
     return view('clientes');
 })->name('nossosclientes');
 
+Route::get('time', function(){
+    return view('time');
+})->name('time');
+
 
 require __DIR__.'/auth.php';
