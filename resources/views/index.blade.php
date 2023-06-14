@@ -29,11 +29,7 @@
                 <div class="mu-about-us-right">                
                  <ul class="mu-abtus-slider">                 
                    <li><img src="/img/about-us/abtus-img-1.png" alt="img"></li>
-                   <li><img src="/img/about-us/abtus-img-2.png" alt="img"></li>
-                   <li><img src="/img/about-us/abtus-img-6.png" alt="img"></li>
-                   <li><img src="/img/about-us/abtus-img-4.png" alt="img"></li>
-                   <li><img src="/img/about-us/abtus-img-5.png" alt="img"></li>
-                 </ul>
+             </ul>
                 </div>
               </div>
             </div>
