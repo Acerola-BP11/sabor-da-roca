@@ -49,7 +49,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::post('edit', [clienteController::class, 'edit']);
         
         // Excluir cliente
-        Route::get('delete/{id}', [clienteController::class, 'excluir'])->name('deleteclient');
+        Route::get('delete/{id}', [clienteController::class, 'delete'])->name('deleteclient');
     });
 });
 
