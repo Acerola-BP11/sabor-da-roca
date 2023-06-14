@@ -6,7 +6,7 @@ export default function TableClient({...props }) {
   const deletar = (e, id) => {
     e.preventDefault()
     
-    axios.post('clientes/delete', id)
+    axios.post('/delete', id)
   }
 
   const atualizar = (e, id) => {
