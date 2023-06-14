@@ -70,7 +70,7 @@ export default function RegisterClient({ auth }) {
             <TextInput
               id="complemento"
               name="complemento"
-              value={data.comple}
+              value={data.complemento}
               className="mt-1 block w-full"
               autoComplete="complemento"
               isFocused={true}
@@ -94,29 +94,29 @@ export default function RegisterClient({ auth }) {
 
             <InputError message={errors.name} className="mt-2" />
 
-            <InputLabel htmlFor="dddfixo" value="DDD Fixo" />
+            <InputLabel htmlFor="ddd_fixo" value="DDD Fixo" />
             <TextInput
-              id="dddfixo"
-              name="dddfixo"
+              id="ddd_fixo"
+              name="ddd_fixo"
               value={data.ddd_fixo}
               className="mt-1 block w-full"
-              autoComplete="dddfixo"
+              autoComplete="ddd_fixo"
               isFocused={true}
-              onChange={(e) => setData('dddfixo', e.target.value)}
+              onChange={(e) => setData('ddd_fixo', e.target.value)}
               required
             />
 
             <InputError message={errors.name} className="mt-2" />
 
-            <InputLabel htmlFor="numerofixo" value="Numero Fixo" />
+            <InputLabel htmlFor="numero_fixo" value="Numero Fixo" />
             <TextInput
-              id="numerofixo"
-              name="numerofixo"
+              id="numero_fixo"
+              name="numero_fixo"
               value={data.numero_fixo}
               className="mt-1 block w-full"
-              autoComplete="numerofixo"
+              autoComplete="numero_fixo"
               isFocused={true}
-              onChange={(e) => setData('numerofixo', e.target.value)}
+              onChange={(e) => setData('numero_fixo', e.target.value)}
               required
             /> 
 
@@ -124,27 +124,27 @@ export default function RegisterClient({ auth }) {
           </div>
           
           <div className="ml-4 w-full">                                   
-            <InputLabel htmlFor="dddcel" value="DDD Cel" />
+            <InputLabel htmlFor="ddd_cel" value="DDD Cel" />
             <TextInput
-              id="dddcel"
-              name="dddcel"
+              id="ddd_cel"
+              name="ddd_cel"
               value={data.ddd_cel}
               className="mt-1 block w-full"
-              autoComplete="dddcel"
+              autoComplete="ddd_cel"
               isFocused={true}
-              onChange={(e) => setData('dddcel', e.target.value)}
+              onChange={(e) => setData('ddd_cel', e.target.value)}
               required
             />    
 
-            <InputLabel htmlFor="numerocel" value="Numero Cel" />
+            <InputLabel htmlFor="numero_cel" value="Numero Cel" />
             <TextInput
-              id="numerocel"
-              name="numerocel"
+              id="numero_cel"
+              name="numero_cel"
               value={data.numero_cel}
               className="mt-1 block w-full"
-              autoComplete="numerocel"
+              autoComplete="numero_cel"
               isFocused={true}
-              onChange={(e) => setData('dddcel', e.target.value)}
+              onChange={(e) => setData('numero_cel', e.target.value)}
               required
             />      
 
