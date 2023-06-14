@@ -58,12 +58,11 @@ class ClienteController extends Controller
 
         return redirect()->route('listclient');
     }
-
-    public function excluir(Request $id)
+    public function excluir($id)
     {
         $cliente = Cliente::find($id);
         $cliente->delete();
-
+    
         return redirect()->route('listclient');
     }
 }
