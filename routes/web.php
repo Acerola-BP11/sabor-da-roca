@@ -88,5 +88,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     });
 });
 
+Route::get('nossosclientes', function(){
+    return view('clientes');
+})->name('nossosclientes');
+
 
 require __DIR__.'/auth.php';
