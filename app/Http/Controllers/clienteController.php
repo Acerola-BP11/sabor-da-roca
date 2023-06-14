@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\Cliente;
+use App\Models\Cliente;
 
 class clienteController extends Controller
 {
     public function list(){
         $clientes = Cliente::all();
-        if ($clientes.count <= 0){
+        if (count($clientes) <= 0){
             return view('lista_clientes', ['Não há nenhum item cadastrado!']);
         }else{
             return view('lista_clientes', [$clientes]);
@@ -20,7 +20,7 @@ class clienteController extends Controller
     }
 
     public function salvarnovo(Request $dados) {
-        $cliente = new cliente;
+        $cliente = new Cliente;
         $cliente->nome = $dados->input("nome");
         $cliente->rua = $dados->input("rua");
         $cliente->complemento = $dados->input("complemento");
@@ -36,7 +36,8 @@ class clienteController extends Controller
         return redirect('/listClients');
     }
 
-    public function edit($id){
+    public function edit($dados){
+        $id = $dados->input('id');
         $cliente = Cliente::find($id);
         $cliente->nome = $dados->input("nome");
         $cliente->rua = $dados->input("rua");

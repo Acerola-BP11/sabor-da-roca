@@ -9,5 +9,7 @@ class Marmitex extends Model
 {
     use HasFactory;
 
+    protected $table = 'marmitex';
+
     protected $fillable = ['preco', 'tamanho', 'tara', 'detalhamento'];
 }
