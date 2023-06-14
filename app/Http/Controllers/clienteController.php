@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\Cliente;
+use App\Models\Cliente;
 
 class clienteController extends Controller
 {
@@ -20,7 +20,7 @@ class clienteController extends Controller
     }
 
     public function salvarnovo(Request $dados) {
-        $cliente = new cliente;
+        $cliente = new Cliente;
         $cliente->nome = $dados->input("nome");
         $cliente->rua = $dados->input("rua");
         $cliente->complemento = $dados->input("complemento");
