@@ -17,7 +17,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="mu-contact-left">
-                    <form class="mu-contact-form">
+                    <form class="mu-contact-form" action='/comentarios/registercoment'>
                       <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" class="form-control" id="name" placeholder="Name">

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\clienteController;
+use App\Http\Controllers\comentarioController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\marmitexController;
 use Illuminate\Foundation\Application;
@@ -97,5 +98,4 @@ Route::get('time', function(){
 })->name('time');
 
 Route::get('listguest', [marmitexController::class, 'listGuest'])->name('listguest');
-
 require __DIR__.'/auth.php';
